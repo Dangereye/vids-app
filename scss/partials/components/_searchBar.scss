@@ -1,0 +1,26 @@
+.search-bar {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  form {
+    width: 100%;
+
+    .input-group {
+      label {
+        display: block;
+        font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      input {
+        padding: 1.2rem;
+        font-size: 1.6rem;
+        width: 100%;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+    }
+  }
+}

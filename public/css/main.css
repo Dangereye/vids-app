@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: clamp(2rem, 2.5vw, 2.4rem);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+p {
+  max-width: 75ch;
+  font-size: 1.6rem;
+  font-weight: 400px;
+  line-height: 2rem;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(36rem, 1fr) 36rem;
+  gap: 2rem;
+}
+
+.left {
+  grid-column: 1/2;
+}
+
+.right {
+  grid-column: 2/3;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .left {
+    grid-column: 1/2;
+  }
+  .right {
+    grid-column: 1/2;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 1.6rem;
+  color: #242424;
+  background-color: whitesmoke;
+}
+
+.search-bar {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.search-bar form {
+  width: 100%;
+}
+
+.search-bar form .input-group label {
+  display: block;
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.search-bar form .input-group input {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.selected-video {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selected-video .player {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.selected-video .player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.selected-video .info {
+  padding: 2rem;
+}
+
+.video-item {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.video-item .video-image {
+  width: 100%;
+  height: auto;
+}
+
+.video-item .video-content {
+  padding: 2rem;
+}
+
+.video-item .video-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}

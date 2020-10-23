@@ -1,0 +1,19 @@
+.video-item {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+
+  .video-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-content {
+    padding: 2rem;
+  }
+
+  .video-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
